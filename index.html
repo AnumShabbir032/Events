@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #more {
+            display: none;
+        }
+
+        #b-btn {
+            border: 1px solid #00aaaf;
+            outline: none;
+            font-size: 14px;
+            background-color: #71bee1;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+        }
+
+        .container,
+        .container1 {
+            border: 1px solid;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        form {
+            padding: 10px;
+        }
+
+        input {
+            margin: 10px 0 10px 0;
+            padding: 10px;
+            width: 550px;
+            border: 1px solid rgb(207, 206, 206);
+
+        }
+
+        button {
+            border: none;
+        }
+
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Question 1 -->
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem minima illum dolor excepturi recusandae
+            molestiae delectus vero libero odio veritatis eaque voluptatum, Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Iste unde, sequi ipsa eius enim asperiores praesentium quo ipsam porro reiciendis! Nobis
+            libero numquam et odit non beatae molestiae odio obcaecati? <span id="dots">...</span> <span id="more">
+                quae, quasi minus molestias eveniet magnam
+                non ex? Omnis pariatur magnam laboriosam, nisi repellendus voluptatem commodi minima perspiciatis
+                consectetur impedit itaque veniam eaque Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium eaque et quasi cumque fugit dolor cum, alias ex nihil tenetur repudiandae cupiditate ea id
+                fugiat aspernatur? Labore delectus, minima numquam aut assumenda quia inventore quod architecto
+                dignissimos aliquam mollitia nesciunt at dolores eaque, fugit officia reiciendis in modi deserunt id?
+                dolores doloribus beatae at velit?</span></p>
+
+        <button id="b-btn" onclick="myFunction()">Read more</button>
+    </div>
+    <!-- Question 1 End-->
+
+
+
+    <!-- Question 2 -->
+
+    <div class="container1">
+        <fieldset>
+            <legend>Account</legend>
+            <form id="studentData" action="">
+                <label for="email"> Email Address: <br />
+                    <input type="email" id="email" class="input_data" name="email" placeholder="Enter Email"
+                        maxlength="6" required>
+                </label>
+                <br />
+                <label for="psw"> Password: <br />
+                    <input type="password" id="pasword" class="input_data" name="psw" placeholder="Enter Password"
+                        maxlength="6" required>
+                </label>
+                <br />
+                <button onclick="check()" id="b-btn">Submit</button>
+
+            </form>
+        </fieldset>
+    </div>
+
+    <!-- Question  2 End-->
+
+
+    <!-- Question 3 -->
+<div class="container1">
+<fieldset>
+    <legend>Students Information</legend>
+    <form id="studInfo" >
+        <label for="fistname">First Name :<br />
+            <input type="text" id="firstname" class="ïnput_data" name="firstname" placeholder="Enter your firstname" required>
+        </label>
+        <br />
+        <label for="lastname">Last Name :<br />
+            <input type="text" id="lastname" class="ïnput_data" name="lastname" placeholder="Enter your lastname" required>
+        </label>
+        <br />
+        <label for="email"> Email Address: <br />
+            <input type="email" id="email" class="input_data" name="email" placeholder="Enter your Email"
+                maxlength="8" required>
+        </label>
+        <br />
+        <label for="rollnum"> Email Address: <br />
+            <input type="text" id="rollnum" class="input_data" name="rollnum" placeholder="Enter your rollnumber"
+                maxlength="6" required>
+        </label>
+        <br />
+
+        <button onclick="checkStudInfo()" id="b-btn">Submit</button>
+    </form>
+</fieldset>
+
+</div>
+    <!-- Question 3 End -->
+
+
+</body>
+<script src="app.js"></script>
+
+</html>
